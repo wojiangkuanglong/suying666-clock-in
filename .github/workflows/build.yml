@@ -2,8 +2,8 @@ name: Suying666-auto-clock-in
 on:
   push:
     branches: [ master ]
-#   schedule:
-#     - cron: '0 1 * * *'
+  schedule:
+    - cron: '0 1 * * *'
   workflow_dispatch:
     inputs:
       my_input:

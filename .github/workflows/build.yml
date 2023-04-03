@@ -4,6 +4,11 @@ on:
     branches: [ master ]
   schedule:
     - cron: '0 1 * * *'
+  workflow_dispatch:
+    inputs:
+      my_input:
+        description: 'input'
+        required: true
 jobs:
   build:
     name: Suying666-clock-in by GitHub Actions
